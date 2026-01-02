@@ -26,6 +26,7 @@ p {
     margin-bottom: 20px;
     align-items: center;
     text-align: center;
+    padding: 50px;
 }
 li{
     list-style: none;
@@ -50,7 +51,7 @@ nav {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
     
@@ -80,12 +81,13 @@ nav {
     margin: 0 auto;
 }
 /*About me*/
+
 #About-me {
-    min-height: 100vh;
+
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding-top: 20px;
     text-align: center;
 }
 .About-me__info--container {
@@ -98,7 +100,7 @@ nav {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin: 0 auto 16px auto;
+    margin: 0 auto 8px auto;
 }
 .About-me__info--image {
     width: 100%;
@@ -106,13 +108,14 @@ nav {
     border-radius: 80%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 15%);
+    margin-bottom: -20px;
 
 }
 .about-me__info--para
 {
     font-size: 30px;
     max-width: 600px;
-    margin: 0 auto;
+    margin-top: -40px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.8;
 }
