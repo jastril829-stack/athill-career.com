@@ -1,22 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
-*{
-font-family: "Ranchers", sans-serif;
-font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Ranchers&display=swap');
+* {
+ font-family: "Libre Baskerville", serif;
+font-optical-sizing: auto;
+font-weight: 700;
 font-style: normal;
 text-decoration: none;
 padding: 0;
 margin: 0;
 box-sizing: border-box;
+background-color: rgb(235, 217, 231);
 
 
 h1, h2, h3, h4, h5, h6, span {
-  color: #01376c;
+  color: #000000;
   margin-bottom: 20px;
   text-align: center;
   line-height: 1.25;
 }
 h1 {
-    background-color: rgb(249, 177, 177);
+    
 }
 p {
     line-height: 1.8;
@@ -50,6 +52,8 @@ nav {
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+
+    
 }
 .nav__link--anchor {
     margin: 0 20px;
@@ -58,19 +62,19 @@ nav {
     font-weight: bold;
 }
 .nav__link--anchor-primary {
-    background-color: rgb(38, 46, 207);
+    background-color: rgb(108, 132, 14);
     padding: 8px 20px;
     border-radius: 50px;
-    color: rgb(255, 255, 255);
+    color: rgb(18, 17, 17);
     transition: all 300ms ease;
 }
 .nav__link--anchor-primary:hover {
-    background-color: rgb(14, 123, 249);
+    background-color: rgb(43, 132, 232);
 
 }
 
 .highlight {
-    color: rgb(165, 7, 244);
+    color: rgb(70, 156, 231);
     display: flex;
     justify-content: center;   
     margin: 0 auto;
@@ -106,7 +110,9 @@ nav {
 }
 .about-me__info--para
 {
-   font-size: 30px;
+    font-size: 30px;
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
 }
