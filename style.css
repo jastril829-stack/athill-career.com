@@ -124,10 +124,9 @@ nav {
     display: flex;
     color: black;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0;
     font-size: 28px;
-    
 }
