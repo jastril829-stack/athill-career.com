@@ -63,7 +63,7 @@ nav {
     font-weight: bold;
 }
 .nav__link--anchor-primary {
-    background-color: rgb(108, 132, 14);
+    background-color: rgb(222, 245, 131);
     padding: 8px 20px;
     border-radius: 50px;
     color: rgb(18, 17, 17);
@@ -92,9 +92,11 @@ nav {
 }
 .About-me__info--container {
     margin: 0 auto;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: 500px;
 }
 .About-me__info--figure {
     width: 100px;
@@ -110,22 +112,24 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 15%);
     margin-bottom: -20px;
 
-}
-.About-me__info--para
-{
+
+ .About-me__info--para {
     font-size: 24px;
     max-width: 400px;
     margin-bottom: 28px;
     text-align: center;
     justify-content: center;
 }
+
 .about-me__links {
     text-decoration: none;
     display: flex;
-    color: #050000;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
     font-size: 24px;
+}
+.about-me__link i {
+    color: rgb(0, 0, 0);
 }
