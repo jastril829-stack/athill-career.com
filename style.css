@@ -2,7 +2,7 @@
 * {
  font-family: "Libre Baskerville", serif;
 font-optical-sizing: auto;
-font-weight: 700;
+font-weight: 800;
 font-style: normal;
 text-decoration: none;
 padding: 0;
@@ -134,13 +134,11 @@ nav {
 .about-me__link i {
     color: rgb(0, 0, 0);
 }
-
-.img {
+about-me__img--container .img {
 display: flex;
 flex-direction: column;
 flex: 1;
 align-items: center;
 width: 100%;
 padding: 0 16px 0 24px;
-
 }
