@@ -125,7 +125,7 @@ nav {
     text-decoration: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     gap: 20px;
     font-size: 24px;
@@ -134,7 +134,7 @@ nav {
 .about-me__link i {
     color: rgb(0, 0, 0);
 }
-about-me__img--container .img {
+.about-me__img {
 display: flex;
 flex-direction: column;
 flex: 1;
