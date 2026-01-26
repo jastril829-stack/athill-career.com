@@ -75,7 +75,7 @@ nav {
 }
 
 .highlight {
-    color: rgb(11, 39, 248);
+    color: rgb(212, 106, 60);
     display: flex;
     justify-content: center;   
     margin: 0 auto;
@@ -110,8 +110,8 @@ nav {
     border-radius: 80%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 15%);
-    margin-bottom: -20px;
-
+    margin-bottom:-20px;
+}
 
 .About-me__info--para {
     font-size: 24px;
@@ -141,4 +141,14 @@ flex: 1;
 align-items: center;
 width: 100%;
 padding: 0 16px 0 24px;
+}
+.about-me__img--container {
+display: flex;
+flex-direction: column;
+flex: 1;
+text-align: center;
+padding-top: 12px;
+}
+.about-me__img{
+    width: 100%;
 }
