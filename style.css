@@ -9,7 +9,9 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 background-color: rgb(215, 242, 190);
-
+ body {
+    background-color: rgb(215, 242, 190);
+}
 
 h1, h2, h3, h4, h5, h6, span {
   color: #000000;
@@ -43,7 +45,10 @@ li{
     max-width: 800px;
     margin: 0 auto;
 }
-
+.column {
+    display: flex;
+    flex-direction: column;
+}
 /*navigation bar*/
 nav {
     display: flex; 
@@ -151,4 +156,24 @@ padding-top: 12px;
 }
 .about-me__img{
     width: 100%;
+}
+/*Main*/
+.main__img--wrapper{
+    width: 100%;
+}
+.main__img-1 {
+    
+}
+.main__img-2 {
+}
+.main__img-3 {
+    {
+.main__img-4 {
+
+}
+.main__img-5 {
+
+}
+.main__img-6 {
+    
 }
