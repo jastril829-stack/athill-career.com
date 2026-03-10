@@ -35,14 +35,32 @@ p {
 }
 a{
     text-decoration: none;
+    position: relative;
+}
+.link__hover-effect {
+    position: relative;
 }
 .link__hover-effect:after {
-   position: absolute;
-   content: "";
+  content: "";
+  position: absolute;
    height: 3px;
-   background-color: rgba(0, 0, 0, 0.45);
-   width: 100%;
+   width: 0;
    bottom: -3px;
+   right: 0;
+   transition: all 300ms ease;
+}
+
+.link__hover-effect--white:after {
+    background-color:white;
+}
+
+.link__hover-effect--black:after {
+    background-color: black;
+}
+
+.link__hover-effect:hover:after {
+   left: 0;
+   width: 100%;
 }
 
 li{
@@ -59,7 +77,13 @@ li{
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 12px;
 }
+
+section:nth-child(even){
+    background-color: rgb(215, 242, 190);
+}
+
 /*navigation bar*/
 nav {
     display: flex; 
@@ -69,6 +93,7 @@ nav {
     margin: 0 auto;
     justify-content: flex-end;
     align-items: center;  
+    padding: 0 14px;
 }
 .nav__link--anchor {
     margin: 0 20px;
@@ -189,6 +214,7 @@ padding-top: 12px;
     justify-content: center;
     flex-wrap: wrap;
     text-decoration: none;
+
 }
 .main__item {
     width: 25%;
@@ -351,4 +377,60 @@ justify-content: center;
 .footer__anchor:hover .footer__logo--popper{
 opacity: 1;
 transform: translateX(60px);
+}
+
+/* Small phone, tablets,large phones */
+@media (max-width: 768px) {
+    .nav {
+        height: 68px;
+    }
+     h1 {
+        font-size:24px;
+     }
+
+     .about-me__info-para {
+        font-size: 18px;
+     }
+    .nav__link--anchor {
+        margin: 0 10px;
+    }
+    .main__item {
+        width: 50%;  
+    }
+    .project__description--para{
+        font-size: 14px;
+    }
+    .project__description{
+    left: 30px;
+    padding-right: 30px;
+    }
+
+}
+/* Small phones */
+@media (max-width: 480px) {
+    .nav {
+        height: 60px;
+    }
+     h1 {
+        font-size: 20px;
+     }
+
+     .about-me__info-para {
+        font-size: 16px;
+     }
+    .nav__link--anchor {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+    .main__item {
+        width: 100%;  
+    }
+    .project__description--para{
+        font-size: 12px;
+    }
+    .project__description{
+    left: 20px;
+    padding-right: 20px;
+    }
+
 }
