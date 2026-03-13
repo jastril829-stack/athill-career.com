@@ -36,6 +36,10 @@ p {
 a{
     text-decoration: none;
     position: relative;
+    transition: opacity 300ms ease;
+}
+a: :hover{
+    opacity: 0.7;
 }
 .link__hover-effect {
     position: relative;
@@ -95,6 +99,11 @@ nav {
     align-items: center;  
     padding: 0 14px;
 }
+.navbar__links__list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 .nav__link--anchor {
     margin: 0 20px;
     color: rgb(0, 0, 0);
@@ -150,6 +159,20 @@ nav {
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 15%);
     margin-bottom:-20px;
+    animation: animate-profile-pic 800ms 200ms backwards;
+}
+@keyframes animate-profile-pic {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    80%{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .About-me__info--para {
@@ -158,6 +181,7 @@ nav {
     margin-bottom: 28px;
     text-align: center;
     justify-content: center;
+    animation: fade-up 650 ms 400ms backwards;
 }
 
 .about-me__links {
@@ -169,9 +193,19 @@ nav {
     gap: 20px;
     font-size: 24px;
 }
-
+qq
 .about-me__link i {
     color: rgb(0, 0, 0);
+}
+@keyframes fade-up {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 .about-me__img {
 display: flex;
@@ -191,6 +225,15 @@ padding-top: 12px;
 }
 .about-me__img{
     width: 100%;
+    animation: fade-in 1200ms 800ms backwards;
+}
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 /*Main*/
 
@@ -408,29 +451,29 @@ transform: translateX(60px);
 }
 /* Small phones */
 @media (max-width: 480px) {
-    .nav {
-        height: 60px;
+    .nav__link:not(:last-child) {
+        display: none;
     }
-     h1 {
-        font-size: 20px;
-     }
-
      .about-me__info-para {
-        font-size: 16px;
-     }
-    .nav__link--anchor {
-        margin: 0 8px;
         font-size: 14px;
+     }
+     .project__description{
+        padding: 0;
+        left: 0;
+        width: 100%;
+     }
+    .project__description--links {
+       display: flex;
+       justify-content: center;
     }
-    .main__item {
-        width: 100%;  
-    }
-    .project__description--para{
-        font-size: 12px;
-    }
-    .project__description{
-    left: 20px;
-    padding-right: 20px;
-    }
+    .project__description--title{
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+}
+    .project__description--subtitle{
+    text-align: center;
+    margin: 12PX 0;
+  }
 
 }
