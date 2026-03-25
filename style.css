@@ -9,6 +9,7 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 background-color: rgb(215, 242, 190);
+}
  body {
     background-color: rgb(215, 242, 190);
 }
@@ -38,7 +39,7 @@ a{
     position: relative;
     transition: opacity 300ms ease;
 }
-a: :hover{
+a:hover{
     opacity: 0.7;
 }
 .link__hover-effect {
@@ -193,7 +194,6 @@ nav {
     gap: 20px;
     font-size: 24px;
 }
-qq
 .about-me__link i {
     color: rgb(0, 0, 0);
 }
@@ -237,9 +237,11 @@ padding-top: 12px;
 }
 /*Main*/
 
-#Main
+#Main {
+padding 40px 0;
+}
 
-.main{
+.main {
     justify-content: center;
     width: 25%;
     display: flex;
@@ -295,10 +297,13 @@ padding-top: 12px;
     transform: scale(1);
     opacity: 1;
 }
+
 /* Projects */
+
 .project{ 
 margin-bottom: 135px;
 }
+
 .project:last-child {
     margin-bottom: 40px;}
 
@@ -370,12 +375,13 @@ margin-bottom: 135px;
     color: rgb(5, 28, 175);
     text-align: left;
 }
+
 /*Footer*/
+
 footer {
-    background-color: #000000;
+  background-color: #000000;
 }
 
-}
 .footer_logo{
     margin-bottom: 20px;
 
@@ -403,7 +409,7 @@ justify-content: center;
 .footer__social--link, 
 .footer__copyright,
 .footer__logo--popper{
-    color: #fff;
+    color: #fa7a7a;
 }
 .footer_-logo--popper{
    position: absolute;
